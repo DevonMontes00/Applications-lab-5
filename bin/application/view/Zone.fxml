@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="663.0" layoutY="33.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="33.0" prefWidth="79.0" text="Home">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="zoneLabel" layoutX="58.0" layoutY="58.0">
+         <font>
+            <Font name="Candara" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="287.0" text="# Dinosaurs:">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="375.0" text="Threat Level:">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="dinoList" layoutX="223.0" layoutY="230.0" prefHeight="232.0" prefWidth="519.0">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </TextArea>
+      <Pane layoutX="45.0" layoutY="485.0" prefHeight="291.0" prefWidth="354.0" style="-fx-background-color: Red;">
+         <children>
+            <Pane layoutX="12.0" layoutY="11.0" prefHeight="270.0" prefWidth="331.0" style="-fx-background-color: Orange;">
+               <children>
+                  <Label layoutX="36.0" layoutY="24.0" text="Add New Dinosaur to this Zone">
+                     <font>
+                        <Font name="Candara" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="97.0" text="Name:">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addDinoName" layoutX="92.0" layoutY="94.0" prefHeight="25.0" prefWidth="205.0" />
+                  <Label layoutX="40.0" layoutY="147.0" text="Type:">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="205.0" text="Carnivore: ">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addDinoType" layoutX="91.0" layoutY="144.0" prefHeight="25.0" prefWidth="205.0" />
+                  <RadioButton fx:id="yes" layoutX="116.0" layoutY="206.0" mnemonicParsing="false" text="Yes">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="no" layoutX="194.0" layoutY="208.0" mnemonicParsing="false" text="No">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Button fx:id="add" layoutX="273.0" layoutY="234.0" mnemonicParsing="false" onAction="#addDino" text="Add">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="succsessTextAdd" layoutX="36.0" layoutY="57.0">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="409.0" layoutY="485.0" prefHeight="291.0" prefWidth="354.0" style="-fx-background-color: Red;">
+         <children>
+            <Pane layoutX="12.0" layoutY="11.0" prefHeight="270.0" prefWidth="331.0" style="-fx-background-color: Orange;">
+               <children>
+                  <Label layoutX="25.0" layoutY="24.0" text="Relocate Dinosaur from this Zone">
+                     <font>
+                        <Font name="Candara" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="102.0" text="Name:">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="152.0" text="Zone Code:">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="relocateDinoName" layoutX="115.0" layoutY="99.0" prefHeight="25.0" prefWidth="192.0" />
+                  <TextField fx:id="relocateDinoZone" layoutX="116.0" layoutY="149.0" prefHeight="25.0" prefWidth="68.0" />
+                  <Button fx:id="relocate" layoutX="249.0" layoutY="235.0" mnemonicParsing="false" onAction="#relocate" text="Relocate">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="succsessTextRelocate" layoutX="25.0" layoutY="59.0">
+                     <font>
+                        <Font name="Candara" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label fx:id="numDinosaurs" layoutX="149.0" layoutY="287.0" text="Label">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="threatLevel" layoutX="149.0" layoutY="375.0" text="Label">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

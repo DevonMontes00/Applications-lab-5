@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainController">
+   <children>
+      <Label layoutX="212.0" layoutY="468.0" text="Select a zone to continue:">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="zoneB" layoutX="121.0" layoutY="523.0" mnemonicParsing="false" onAction="#showZoneB" prefHeight="100.0" prefWidth="100.0" text="B" />
+      <Button fx:id="zoneD" layoutX="284.0" layoutY="523.0" mnemonicParsing="false" onAction="#showZoneD" prefHeight="100.0" prefWidth="100.0" text="D" />
+      <Button fx:id="zoneG" layoutX="441.0" layoutY="523.0" mnemonicParsing="false" onAction="#showZoneG" prefHeight="100.0" prefWidth="100.0" text="G" />
+      <Button fx:id="zoneR" layoutX="599.0" layoutY="523.0" mnemonicParsing="false" onAction="#showZoneR" prefHeight="100.0" prefWidth="100.0" text="R" />
+      <Button fx:id="zoneTR" layoutX="194.0" layoutY="640.0" mnemonicParsing="false" onAction="#showZoneTR" prefHeight="100.0" prefWidth="100.0" text="TR" />
+      <Button fx:id="zoneTY" layoutX="360.0" layoutY="640.0" mnemonicParsing="false" onAction="#showZoneTY" prefHeight="100.0" prefWidth="100.0" text="TY" />
+      <Button fx:id="zoneX" layoutX="515.0" layoutY="640.0" mnemonicParsing="false" onAction="#showZoneX" prefHeight="100.0" prefWidth="100.0" text="X" />
+      <ImageView fx:id="logo" fitHeight="298.0" fitWidth="641.0" layoutX="90.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
